@@ -1,6 +1,8 @@
 # Trabalho: Agenda pBuffer
-# Descrição
-O programa implementa uma agenda com o seguinte menu:
+Este projeto implementa uma agenda de contatos com gerenciamento de memória manual.
+
+# Funcionalidades
+O programa deve ter um menu com as seguintes opções:
 
 Adicionar Pessoa (Nome, Idade, email)
 
@@ -12,20 +14,13 @@ Listar todos
 
 Sair
 
-# O Desafio (pBuffer)
-O desafio é não poder criar variáveis e sim um buffer de memória (void *pBuffer). Nisso vocês terão que fazer o trabalho que o Sistema Operacional faz para vocês ao organizar a memória.
+# Regras (O Desafio)
+O objetivo é simular o gerenciamento de memória de um Sistema Operacional.
 
-# Regras
-Nenhuma variável pode ser declarada em todo o programa, somente ponteiros. Todos os dados do programa devem ser guardados dentro do pBuffer.
+Nenhuma variável (como int c; ou char a;) pode ser declarada.
 
-Nem mesmo como parâmetro de função. Só ponteiros que apontam para dentro do pBuffer.
+Não pode usar struct.
 
-Exemplo do que não pode: int c; char a; int v[10]; void Funcao(int parametro)
+Todos os dados do programa (incluindo dados de controle) devem ser armazenados dentro de um único buffer de memória: void *pBuffer.
 
-Não pode usar struct em todo o programa.
-
-Entregar link de um vídeo explicando o código e mostrando alguns testes e ao final o resultado do DrMemory ou Valgrind.
-
-Vou perguntar no 1:1 sobre a sua implementação. Posso pedir para fazer alguma modificação no código na nossa conversa. O objetivo é saber se entenderam o que fizeram.
-
-Veja nos vídeos feitos pelos monitores dicas para esse trabalho (o vídeo do monitor sobre o pBuffer não segue todas às regras, quando ele fez o vídeo as regras eram diferentes das que estão aqui).
+A manipulação dos dados deve ser feita exclusivamente através de ponteiros que apontam para dentro do pBuffer.
